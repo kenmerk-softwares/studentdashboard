@@ -1,25 +1,19 @@
-import { InfinitySpin 
-} from  'react-loader-spinner'
-
+import { Puff } from 'react-loader-spinner';
 
 export default function Spinner() {
   return (
-    <div    style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}>
-      <InfinitySpin 
-
-    height = "280"
-    width = "280"
-    radius = "129"
-    color = '#2784F3  '
-    ariaLabel = 'three-dots-loading'     
-    wrapperStyle
-    wrapperClass
-  />
+    <div style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+    }}>
+      <Puff
+        color="green"
+        height={80}
+        width={80}
+        timeout={3000} // Specify a timeout in milliseconds (e.g., 3000 for 3 seconds)
+      />
     </div>
-  )
+  );
 }

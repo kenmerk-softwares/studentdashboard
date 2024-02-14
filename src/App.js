@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import classNames from "classnames";
 import { CSSTransition } from "react-transition-group";
 import { AppTopbar } from "./AppTopbar";
-import { AppMenu } from "./AppMenu";
+
 import { AppConfig } from "./AppConfig";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
@@ -22,7 +22,8 @@ import "./App.scss";
 import { useNavigate } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Spinner from "./components/Spinner/Spinner";
-import Users from "./components/Spinner/Users/Users";
+import Users from "./components/Users/Users";
+import Forms from "./components/Users/Forms/Forms";
 
 
 
@@ -62,13 +63,7 @@ const App = () => {
     });
   },[])
 
-  useEffect(() => {
-    if (mobileMenuActive) {
-      addClass(document.body, "body-overflow-hidden");
-    } else {
-      removeClass(document.body, "body-overflow-hidden");
-    }
-  }, [mobileMenuActive]);
+ 
 
   useEffect(() => {
     copyTooltipRef &&
@@ -165,49 +160,7 @@ const App = () => {
     return window.innerWidth >= 992;
   };
 
-  const menu = [
-  
-    {
-      label: "Dashboard",
-      icon: "pi pi-fw pi-search",
-      items: [
-     {
-          label: "Home",
-          icon: "pi pi-fw pi-home",
-          to: "/",
-        },
-        
-
-        {
-          label: "Demo",
-          icon: "pi pi-fw pi-user",
-          items: [
-            {
-              label: "demo",
-              icon: "pi pi-tags",
-              to: "/levelten",
-            },
-            {
-              label: "demo",
-              icon: "pi pi-tags",
-              to: "/",
-            },
-            {
-              label: "LogOut",
-              icon: "pi pi-tags",
-              to: "/",
-            },
-           
-          ],
-        },
-        
-
-      ],
-    },
-    
-  
-  
-  ];
+ 
 
   const addClass = (element, className) => {
     if (element.classList) element.classList.add(className);
@@ -273,6 +226,8 @@ const App = () => {
                   {/* <Route path="/" exact render={() => <Dashboard colorMode={layoutColorMode} location={location} />} /> */}
                   <Route path="/" element={<Dashboard />} />
                      <Route path="/users" element={<Users />} />
+                        <Route path="/forms" element={<Forms />} />
+
 
                   
                 </Routes>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { collection,  getDocs, orderBy, query,} from 'firebase/firestore';
-import { db} from '../../Config/Config';
+import { db} from '../Config/Config';
 export default function Users() {
     const[users,setusers]=useState([]);
        const columns = [

@@ -32,7 +32,7 @@ useEffect(()=>{
     <div className="grid">
       <div className="col-12 lg:col-6 xl:col-12">
         <div className="card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
            
             </div>
@@ -47,7 +47,7 @@ useEffect(()=>{
 navigate('/users')
    )}>
         <div className=" card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
               <span className="text-600 font-medium text-xl">Users</span>
     
@@ -62,7 +62,7 @@ navigate('/users')
 navigate('/menu2')
    )}>
         <div className="card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
               <span className="text-600 font-medium text-xl">menu2</span>
          
@@ -76,7 +76,7 @@ navigate('/menu2')
 navigate('/menu3')
    )}>
         <div className="card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
               <span className="text-600 font-medium text-xl">Menu3</span>
          
@@ -90,7 +90,7 @@ navigate('/menu3')
 navigate('/menu3')
    )}>
         <div className="card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
               <span className="text-600 font-medium text-xl">Menu4</span>
          
@@ -104,7 +104,7 @@ navigate('/menu3')
 navigate('/menu3')
    )}>
         <div className="card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
               <span className="text-600 font-medium text-xl">Menu5</span>
          
@@ -118,7 +118,7 @@ navigate('/menu3')
 navigate('/menu3')
    )}>
         <div className="card mb-0">
-          <div className="flex justify-content-between mb-3">
+          <div className="flex justify-content-between mb-1">
             <div>
               <span className="text-600 font-medium text-xl">Menu6</span>
          
